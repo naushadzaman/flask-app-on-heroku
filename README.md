@@ -13,27 +13,17 @@ Initial Setup for both AWS and Heroku
 	$ heroku login
 	
 	## cd to project directory 
-	$ mkdir flask-project
-	$ cd flask-project
+	$ cd flask-app-on-heroku/
 	
 	## setup virtualenv
 	$ virtualenv venv --distribute
 	$ source venv/bin/activate
 	
 	## install pre-requisites 
-	$ cp ../flask-app-on-heroku/requirements.txt .
 	$ pip install -r requirements.txt
 
-	## copy all files 
-	$ cp ../flask-app-on-heroku/Procfile .
-	$ cp -r ../flask-app-on-heroku/app .
-	$ cp ../flask-app-on-heroku/config.py .
-	$ cp -r ../flask-app-on-heroku/tmp/ .
-
-	
 	$ foreman start
 	
-	$ git init
 	$ git add .
 	$ git commit -m "init"
 	
