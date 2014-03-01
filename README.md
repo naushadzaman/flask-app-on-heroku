@@ -18,6 +18,7 @@ Initial Setup for both AWS and Heroku
 	
 	## install Flask - web framework and Gunicorn - web server 
 	$ pip install Flask gunicorn
+	$ pip install -r requirements.txt
 	
 	$ foreman start
 	
@@ -39,4 +40,3 @@ pip install flask-wtf==0.8.4
 pip install pytz==2013b
 pip install flask-babel==0.8
 pip install flup	
-	
