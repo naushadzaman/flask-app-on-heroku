@@ -1,7 +1,8 @@
 heroku-flask
 ====================
 Install Flask, the web framework, and Gunicorn, the web server.
-primarily from: https://devcenter.heroku.com/articles/getting-started-with-python
+primarily from: https://devcenter.heroku.com/articles/getting-started-with-python and 
+http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
 Initial Setup for both AWS and Heroku 
 -----
