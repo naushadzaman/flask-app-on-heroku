@@ -40,3 +40,6 @@ Initial Setup for both AWS and Heroku
 	$ heroku create
 	$ git push heroku master
 	
+	try: 
+	http://your-app-name.herokuapp.com/ and 
+	http://your-app-name.herokuapp.com/input
