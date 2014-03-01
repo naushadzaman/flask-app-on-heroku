@@ -6,7 +6,7 @@ from forms import InputLocation
 @app.route('/')
 @app.route('/index')
 def index():
-    user = { 'nickname': 'Miguel' }
+    user = { 'nickname': 'Migual' }
     posts = [
         { 
             'author': { 'nickname': 'John' }, 
