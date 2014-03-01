@@ -5,6 +5,9 @@ primarily from: https://devcenter.heroku.com/articles/getting-started-with-pytho
 
 Initial Setup for both AWS and Heroku 
 -----
+	## clone flask-app on heroku codes  
+	$ git clone https://github.com/naushadzaman/flask-app-on-heroku
+	
 	## login to heroku 
 	$ heroku login
 	
@@ -16,9 +19,16 @@ Initial Setup for both AWS and Heroku
 	$ virtualenv venv --distribute
 	$ source venv/bin/activate
 	
-	## install Flask - web framework and Gunicorn - web server 
-	$ pip install Flask gunicorn
+	## install pre-requisites 
+	$ cp ../flask-app-on-heroku/requirements.txt .
 	$ pip install -r requirements.txt
+
+	## copy all files 
+	$ cp ../flask-app-on-heroku/Procfile .
+	$ cp -r ../flask-app-on-heroku/app .
+	$ cp ../flask-app-on-heroku/config.py .
+	$ cp -r ../flask-app-on-heroku/tmp/ .
+
 	
 	$ foreman start
 	
@@ -29,14 +39,3 @@ Initial Setup for both AWS and Heroku
 	$ heroku create
 	$ git push heroku master
 	
-pip install flask-login
-pip install flask-openid
-pip install flask-mail==0.7.6
-pip install sqlalchemy==0.7.9
-pip install flask-sqlalchemy==0.16
-pip install sqlalchemy-migrate==0.7.2
-pip install flask-whooshalchemy==0.55a
-pip install flask-wtf==0.8.4
-pip install pytz==2013b
-pip install flask-babel==0.8
-pip install flup	
